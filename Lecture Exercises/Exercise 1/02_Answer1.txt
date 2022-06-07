@@ -1,0 +1,22 @@
+Kevin David Mitnick (born August 6, 1963) is an American computer security consultant, author, and convicted hacker. He is best known for his high-profile 1995 arrest and five years in prison for various computer and communications-related crimes.
+
+Mitnick's pursuit, arrest, trial, and sentence along with the associated journalism, books, and films were all controversial.
+
+He now runs the security firm Mitnick Security Consulting, LLC. He is also the Chief Hacking Officer and part owner of the security awareness training company KnowBe4, as well as an active advisory board member at Zimperium, a firm that develops a mobile intrusion prevention system.
+
+Controversy
+Mitnick's criminal activities, arrest, and trial, along with the associated journalism, were all controversial. Though Mitnick has been convicted of copying software unlawfully, his supporters argue that his punishment was excessive and that many of the charges against him were fraudulent and not based on actual losses.
+
+In his 2002 book, The Art of Deception, Mitnick states that he compromised computers solely by using passwords and codes that he gained by social engineering. He claims he did not use software programs or hacking tools for cracking passwords or otherwise exploiting computer or phone security.
+
+John Markoff and Tsutomu Shimomura, who had both been part of the pursuit of Mitnick, wrote the book Takedown about Mitnick's capture.
+
+The case against Mitnick tested the new laws that had been enacted for dealing with computer crime, and it raised public awareness of security involving networked computers. The controversy remains, however, and the Mitnick story is often cited today as an example of the influence that newspapers and other media outlets can have on law enforcement personnel.
+
+Written by Mitnick
+Mitnick is the co-author, with William L. Simon and Robert Vamosi, of four books, three on computer security and his autobiography:
+
+(2003) The Art of Deception: Controlling the Human Element of Security
+(2005) The Art of Intrusion: The Real Stories Behind the Exploits of Hackers, Intruders & Deceivers
+(2011) Ghost in the Wires: My Adventures as the World's Most Wanted Hacker
+(2017) The Art of Invisibility

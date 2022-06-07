@@ -1,0 +1,39 @@
+Exercise
+
+1. Check for your internal and external IP addresses using the steps given below.
+
+For Windows Users:
+1. Click on the start menu and type cmd to open the command prompt.
+2. Type ipconfig and press enter.
+3. Your will see your Internal IP Address.
+
+For Linux/Mac Os users:
+1. Open your "Terminal" (Ctrl/Cmd + Alt + T).
+2. Type ifconfig and press enter.
+3. Your will see your Internal IP Address.
+
+To find the external IP address, just search for ip address on google and to use these
+free websites to check your external IP address.
+whatsmyip.com
+ipchicken.com
+ipcow.com
+
+2. Find the internal and external IP addresses of 2 devices connected to the same
+WiFi network and check the following:
+a. Are the Internal Addresses same?
+b. Are the External Addresses same?
+c. Does the Internal Address change after restarting the WiFi router?
+d. Does the External Address change after Restarting the WiFi router?
+
+3. DNS Lookup
+
+So, here are some commands that we can use to do a live DNS lookup and to check
+for IP addresses of domain names.
+
+For Windows users:
+
+○ Press windows+r to open the Run dialog box.
+○ Type cmd and press enter.
+○ Type nslookup, space, the domain name that you want to see the IP
+address for, example: google.com, and press enter.
+This will give you the most recent IP addresses of Google.

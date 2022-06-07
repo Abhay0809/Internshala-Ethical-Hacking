@@ -1,0 +1,9 @@
+Exercise
+
+
+Q1. Make an html page with the following structure: (Hint: You may need to do the first question thoroughly before you continue with this one. For tags that have not been covered in the videos, try finding out the solutions using www.w3schools.com.) Title - “What is PHP”. Body- An image containing the PHP logo. 2 paragraphs about PHP programming language A button which says “I love HTML”. When the user hovers his mouse over this button, an alert pops up saying, “I love HTML too”. A form - which sends data to abc.com/hello.php using the GET method, with the following fields: Text - fname Text - age Radio Button - Male/Female
+ 
+Q2. Using form, make a page in HTML where the user can enter a keyword and click on the “Search” button and then that keyword is searched on google. TIP: google.com/search?q=dog will give search results for Dogs
+ 
+Q3. Make a form with sample action and fields and make 2 buttons outside the form “Switch to GET” “Switch to POST” which when clicked, changes the method of the form to GET, POST respectively. TIP: document.getElementById(‘myform’).action=”yolo”.
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUN WITH FORM</title>
+</head>
+<body>
+    <h1>FORM ACTION CHANGER</h1>
+
+    <p id="meth_get"></p>
+    <p id="meth_post"></p>
+
+    <form id="myform" method="get">
+
+        <label for="name">FULL NAME</label> <br>
+        <input type="text" placeholder="Enter Name Here">
+
+        <br><br>
+
+        <label for="age">Age</label> <br>
+        <input type="text" placeholder="Enter Age Here">
+
+        <br><br>
+
+        <button type="submit" value="Submit">Submit</button>
+
+    </form>
+
+    <br><br>
+
+    <button onclick="meth_get()">SWITCH TO GET</button> 
+    <button onclick="meth_post()">SWITCH TO POST</button>
+
+    <script>
+        function meth_get() {
+            document.getElementById('myform').method='get'
+            document.getElementById('meth_get').innerHTML = "FORM IS IN GET METHOD"
+        }
+
+        function meth_post() {
+            document.getElementById('myform').method='post'
+            document.getElementById('meth_post').innerHTML = "FORM IS IN POST METHOD"
+        }
+    </script>
+</body>
+</html>

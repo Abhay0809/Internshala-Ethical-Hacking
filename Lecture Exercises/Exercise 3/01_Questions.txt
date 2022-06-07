@@ -1,0 +1,6 @@
+Exercise
+
+Q1. Run the netstat command and see what ports are running on your system. Use Google and find out what these ports are used for and then deduce why your system is waiting for a connection on each of these ports.
+
+Hint: 
+On Windows, Run cmd as administrator and inside it, “netstat -aon”.

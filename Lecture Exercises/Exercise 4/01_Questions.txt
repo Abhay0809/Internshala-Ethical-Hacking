@@ -1,0 +1,10 @@
+Exercise
+
+Q1. Run a search for your own name, email and mobile number using all the
+methodologies discussed in this topic and find what information about you is available in the open.
+
+Q2. Gather builtwith information about a known website and try understanding the output.
+
+Q3. Gather the names of the subdomains of a known website and see what kind of applications are running on them.
+
+Q4. Try using various features of web.archive.org.

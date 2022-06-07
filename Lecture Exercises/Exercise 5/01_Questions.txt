@@ -1,0 +1,5 @@
+Exercise
+
+Q1. Use each of the google dorks taught in this topic to find interesting information about other websites.
+
+Q2. Go through search filters of the GHDB and try understanding its various categories like: Footholds, Sensitive Directories, Error Messages, Online Devices, etc.
