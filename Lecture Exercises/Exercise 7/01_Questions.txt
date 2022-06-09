@@ -1,0 +1,10 @@
+Exercise
+
+Q1. Write a php program that prints numbers from 1 to 100, each number in a different paragraph.
+
+Q2. Write a php program to print “good morning”, “good afternoon”, “good evening”, and “good night” based upon the current time. Hint: date(‘H’) will give you the present hour (in 24 hr format).
+
+Q3. Go through the basics of PHP at w3schools
+https://www.w3schools.com/php/default.asp
+
+Q4. Make 2 HTML forms with sample fields and values. Set one action to GET and another to POST. Download “Live HTTP Headers” addon for firefox and capture the request in both the cases after submitting the form. Analyse where the data from your input fields goes in the request.
