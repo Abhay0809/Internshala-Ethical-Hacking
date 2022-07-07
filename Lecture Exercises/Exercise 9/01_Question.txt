@@ -1,0 +1,2 @@
+Q) Study and research about concat() and group_concat() functions in MySQL and try using it in SQL injection.
+

