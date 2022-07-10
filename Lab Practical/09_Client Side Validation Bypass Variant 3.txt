@@ -1,0 +1,13 @@
+-> Client Side Validation Bypass Variant 3
+
+Step 1: Go to the link to access the lab (The URL will be different for each user). http://13.233.238.136/Client-Side-Validation-Bypass/Variant-3/
+
+Step 2: Now click on ‘Ride Now’ button. It will take you to the payment page.
+
+Step 3: Now open Burp Suite and turn the intercept on under ‘proxy’ tab.
+
+Step 4: Now click on the ‘CONFIRM BOOKING’ button and intercept the request.
+
+Step 5: Change the toll amount to -1000 and click on ‘Go’ button to forward the request.
+
+Step 6: Turn off the intercept and open the browser, the toll will get added to the price but as it is -1000, it will be subtracted allowing you to book without wallet balance.

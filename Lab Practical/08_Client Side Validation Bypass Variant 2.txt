@@ -1,0 +1,7 @@
+-> Client Side Validation Bypass Variant 2
+
+Before clicking on pay button, turn on intercept in burp/tamper data. Click on pay and capture the request.
+
+Change discount=300 to discount=2500
+
+Payment is successful. Final balance: 500
