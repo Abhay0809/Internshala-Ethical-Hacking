@@ -1,0 +1,1 @@
+Study about different kinds of encodings in web applications like URL encoding, Base64 encoding, hashing, etc.
