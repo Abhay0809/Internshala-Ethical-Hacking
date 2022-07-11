@@ -1,0 +1,31 @@
+-> AutoLoading Pages (AJAX)
+
+Solution for manual approach
+Step 1: Go to the URL to access the lab (The URL will be different for each user). http://13.233.238.136/SQL-Injection/Autoloading-Page/
+
+Step 2: Make sure Burp Suite is listening but intercept is turned off.
+
+Step 3: Now when you scroll down more products keep loading. So, how does this work? There must be some other request fetching more products. So, once more products are loaded, go to the HTTP history tab in Burp Suite and somewhere near the bottom of the list of all requests you will see a request to the following URL: http://13.233.238.136/SQL-Injection/Autoloading-Page/details.php?page=2
+
+Step 4: Now right click on the HTTP request and choose ‘send to repeater’ option to send the request to Repeater.
+
+Step 5: Now Add this query (page=2' order by 3--+) to the URL and click on the ‘Go’ button in Repeater Panel. Wait until you get the response. Once the response appears, right click on the ‘Response’ section and choose ‘show response in browser’ option. Then click on the ‘copy’ button from the pop up we get and paste the response URL in the browser to view the response.
+
+Step 6: Now to find vulnerable columns enter this query:
+page=2' union select 1,2,3--+
+It will give you three columns (1,2,3) and these are our injection points.
+
+Step 7: Now to find tables, enter this query:
+page=2' union select 1,group_concat(table_name),3 from information_schema.table_constraints--+ The click on ‘Go’ and then again click on ‘show response in browser’.
+
+Step 8: Now proceed further on your own based on what you have learnt in the previous SQL injection challenges.
+
+Solution for SQLmap:
+Step 1: Follow the step 1-step 3 from the manual approach.
+
+Step 2: Open SQLmap on the terminal or Command Prompt.
+
+Step 3: Now paste the URL in SQLmap liked this:
+python sqlmap.py -u http://13.233.238.136/SQL-Injection/Autoloading-Page/details.php?page=2 --dbs
+
+Step 4: Now proceed further as taught in the earlier videos to dump database.

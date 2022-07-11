@@ -1,0 +1,9 @@
+-> Client Side Validation Bypass Variant 1
+
+Start intercept in Burp Suite/Tamper Data. Fill the form and Check the 'I agree' checkbox and hit submit.
+
+Request will be captured, make the terms parameter false from true.
+
+terms=false
+
+And submit the request, turn off the intercept, the value will be accepted by the backend code
