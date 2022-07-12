@@ -1,0 +1,2 @@
+Q1. Read about other types of attacks in Intruder like Cluster Bomb, Pitch Fork, and Battering Ram.
+Q2. Read about other payload types including Brute Forcer, Dates, Username Generator, Null Payloads, etc.

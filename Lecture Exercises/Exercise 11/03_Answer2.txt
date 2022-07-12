@@ -1,0 +1,9 @@
+Payload Types
+
+Bruteforcer: This payload type generates payloads of specified lengths that contain all permutations of a specified character set. The following options are available: Character set - The set of characters to be used in the payloads. Note that the total number of payloads increases exponentially with the size of this set. Min length - The length of the shortest payload. Max length - The length of the longest payload.
+
+Dates: This payload type generates date payloads within a given range and in a specified format. This payload type may be useful during brute forcing (e.g. guessing the date of birth component of a user's credentials).
+
+Username Generator: This payload type lets you configure a list of names or email addresses, and derives potential usernames from these using various common schemes.
+
+NULL Payloads: This payload type generates payloads whose value is an empty string. This payload type is useful when an attack requires the same request to be made repeatedly, without any modification to the basic template.
