@@ -1,0 +1,31 @@
+-> Rate Limiting Flaws Variant 2
+
+Step 1: Go to the URL to access the lab (The URL may be different for each user). http://13.234.217.4/Rate-Limiting-Flaws/Variant-2/
+
+Step 2: It will show you the ‘Hinder’ signup page. Enter the Email, Username, and Password.
+
+Step 3: Now open Burp Suite and turn on the intercept.
+
+Step 4: In the browser, click on the ‘Sign Up’ button and intercept the request.
+
+Step 5: Now send this request to Intruder (ctrl+i)
+
+Step 6: Under the Intruder tab, click on the ‘positions’ option and clear all selected request parameters.
+
+Step 7: Now select the email and username fields.
+
+Step 8: Choose the attack type as ‘Pitch Fork’.
+
+Step 9: Now click on the ‘payloads’ tab and choose payload set 1.
+
+Also set Payload Type to ‘Simple List’.
+
+Step 10: Now under ‘Payload Options’ add payloads manually. After each payload, click on the ‘Add’ button to add another payload. You need to enter 10 email IDs here.
+
+Step 11: Now choose payload set 2.
+
+Step 12: Repeat the same steps from step 9 to step 10 for Payload set 2.
+
+Step 13: Click on ‘Start Attack’.
+
+Step 14: Now it will open the Intruder window which will have the request. Choose the request and right click and choose ‘show response in browser’, and then copy the response URL and paste it in the browser.

@@ -1,0 +1,9 @@
+-> Rate Limiting Flaws Variant 1
+
+Task: Figure out if there is a rate limiting flaw in the use case below. If yes, exploit it to send 10 referrals to these email IDs (inbox1@gmail.com, inbox2@gmail.com).
+
+Intercept the request with burp, send to intruder and clear all positions.
+
+Choose attack type sniper and in payload options choose null payload 10 times.
+
+Start the attack and the recipient will get 10 referral emails
