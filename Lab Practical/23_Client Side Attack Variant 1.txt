@@ -1,0 +1,15 @@
+-> Client Side Attack Variant 1
+
+Although it is a blacklist filter and php isnt allowed, an attacker can still upload malicious executable (exe) files to spread malware or make malicious HTML files to Phish users under the name of the website.
+
+Rename malicious HTML/exe file to filename.jpeg
+
+Start burp intercept
+
+Press Upload and capture the request
+
+Rename file to filename.exe / filename.html (as per original name)
+
+Visit the path /static/uploads/File-Upload-Vulnerabilities-V4/filename.exe/html to confirm.
+
+This file can now be distributed to victims

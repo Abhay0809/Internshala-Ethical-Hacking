@@ -1,0 +1,28 @@
+-> Client Side Attack Variant 2
+
+Step 1: Go to the link (The URL will be different for each user). http://13.232.74.70/File-Upload-Vulnerabilities/Client-Side-Attack-Variant-2/
+
+Step 2: Now open notepad (by pressing window+r key then type notepad and hit Enter) and paste this code.
+<html>
+<head><title>hacked</title></head>
+<body>Hacked!
+</body></html>
+
+Step 3: Save the file with anyname.pdf
+
+Step 4: Now open Burp Suite and turn on the intercept.
+
+Step 5: Now click on the ‘Upload’ button to upload the file you just created.
+
+Step 6: Choose the file and intercept the request.
+
+Step 7: Change the filename in the intercepted request as shown below:
+filename="file.pdf" to filename="file.html"
+Now, forward the request. Make sure to turn off the intercept.
+
+Step 8: You will see that the file is uploaded.
+
+Step 9: Now click on sample Adhaar link option to find the directory link.
+
+Step 11: Copy this path shown in the Adhaar card screenshot to your browser to view the uploaded file:
+http://url/static/uploads/File-Upload-Vulnerabilities-V5/documents/yourfilename.html

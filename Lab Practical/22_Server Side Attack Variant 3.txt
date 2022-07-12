@@ -1,0 +1,18 @@
+-> Server Side Attack Variant 3
+
+Step 1: Go to the hacking challenge (The URL will be different for each user). http://13.232.74.70/File-Upload-Vulnerabilities/Server-Side-Attack-Variant-3/
+
+Step 2: Now open notepad (press windows+r key, then type notepad and hit Enter key) and copy-paste the code given below in the notepad file.
+<?php echo "hacked"; ?>
+Save the file with anyname.php.pdf (make sure to write both the extensions).
+
+Step 3: Now open Burp Suite and turn the intercept on.
+
+Step 4: Go to the browser and click on upload. Choose the file anyname.php.pdf and intercept the request.
+
+Step 5: Now change the file name from ‘anyname.php.pdf’ to ‘anyname.php%00.pdf
+(Here we added Null byte character %00. In older versions of php, anything after %00 is disregarded and hence the file will be saved as anyname.php)
+Now click on the ‘forward’ button and turn off the intercept.
+
+Step 6: Now go to the browser and click on the download button.
+Here the uploaded file will be opened. 

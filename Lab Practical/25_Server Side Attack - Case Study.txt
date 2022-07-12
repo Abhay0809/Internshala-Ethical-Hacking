@@ -1,0 +1,23 @@
+-> Server Side Attack - Case Study
+
+Step 1: Go to the hacking challenge (The URL will be different for each user). http://13.232.74.70/File-Upload-Vulnerabilities/Server-Side-Attack-Case-Study/
+
+Step 2: Now open notepad (Press window+r, type notepad and hit ENTER key) and copy-paste the given code.
+
+<?php
+phpinfo();
+?>
+
+Step 3: Now save the file with the name anyname.ppt (make sure to use this extension only)
+
+Step 4: Open Burp Suite and turn on the intercept.
+
+Step 5: Now in the browser, click on the upload button and choose the file we have created, and intercept the request.
+
+Step 6: Now in Burp Suite, change the filename in the intercepted request from ‘anyname.ppt’ to ‘anyname.php4’.
+
+Step 7: Now click on ‘forward’ and turn off the intercept.
+You can see that the file is uploaded now.
+
+Step 8: Now click on the download icon (available on the right side of the uploaded file to open it).
+Here you will see that the file will open successfully. 

