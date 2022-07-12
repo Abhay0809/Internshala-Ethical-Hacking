@@ -1,0 +1,11 @@
+-> GET Based IDOR in URL Variant 2
+
+Step 1: Go to the hacking challenge (The URL will be different for each user). http://13.233.238.136/Insecure-Direct-Object-Reference/GET-Based-IDOR-in-URL-Variant-2/
+
+Step 2: Open Burp Suite and turn the intercept on under the ‘proxy’ tab.
+
+Step 3: Click on the delete icon (red colour cross on the right side) and intercept the request using Burp Suite.
+
+Step 4: Now send this request to ‘repeater’ (use the shortcut ctrl+r on Burp Suite to send the request directly to Repeater) and change the intercepted User ID with the IDs given in the username of other users. Now click on the ‘Go’ button to forward the request.
+
+Step 5: Now refresh the browser to view the changes.

@@ -1,0 +1,9 @@
+-> Post Based IDOR Variant 1
+
+Task: You were hired as a security expert by an organisation and you found the phone number of an important employee through social hacking. You also found out he was registered on this same website as you. Now use his number (+91-6842097531) and see if you can get his call details.
+
+Intercept request with Burp -call-history.php
+
+Change phone_num=[target phone number]
+
+Other number’s call history is shown

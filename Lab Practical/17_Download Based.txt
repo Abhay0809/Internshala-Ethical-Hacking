@@ -1,0 +1,19 @@
+-> Download Based
+
+Step 1: Go to the hacking challenge (The URL will be different for each user). http://13.234.217.4/Insecure-Direct-Object-Reference/Download-based/
+
+Step 2: Open Burp Suite and turn the intercept ON.
+
+Step 3: Click on ‘Generate A/C statement for this month’ button and intercept the request.
+
+Step 4: Send this request to Repeater (ctrl+r) and turn off the intercept.
+
+Step 5: Now increment the account number value by adding 1 to the account number.
+
+Step 6: Click on ‘Go’ button.
+
+Step 7: Now right click on the ‘Response’ section and select ‘show response in browser’ option and copy the response URL. Then paste it in the same browser to view the response.
+
+Here you will get the information of the other user.
+You have successfully passed the challenge
+You can even use Intruder to try all possible values for the last 2 digits of the account number in case you want to find more valid account numbers.

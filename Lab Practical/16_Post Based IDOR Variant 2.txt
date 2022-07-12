@@ -1,0 +1,31 @@
+-> Post Based IDOR Variant 2
+
+Step 1. While making sure Burp Suite is configured in the browser, visit the URL http://13.234.217.4/Insecure-Direct-Object-Reference/Post-Based-IDOR-Variant-2/ 
+
+Step 2. Now click on the 'Generate Salary Slip' button and wait for the response. This request will be captured in Burp Suite.
+
+Step 3. Now to view the request you just sent, open Burp Suite and go to the tab Proxy -> HTTP history.
+
+Step 4. This HTTP history tab contains all the requests your browser has sent so far. Scroll down to the last few requests and notice the POST request you just made, it will have the EMP=EMP9D parameter which is the employee id. Click on it and the complete HTTP request will be displayed in the 'request' tab at the bottom.
+
+Step 5. Now right click on this request and send it to Intruder.
+
+Step 6: Now click on the Intruder tab, and click on the ‘Positions’ tab.
+Note: Make sure to clear all selected parameters first.
+
+Step 7: Now from the parameter Emp=EMP9D, select the ‘9D’ part and click on the ’Add’ button.
+
+Step 8: Select ‘Attack type’ as ‘Sniper’.
+
+Step 9: Now click on ‘payloads’ tab.
+
+Step 10: Under ‘payload options’ section, enter this character set:
+ABCDEFGHIJKLMNOPQRSTUVWXYZ9876543210.
+Now set the Min and Max length to 2.
+
+Step 11: Click on ‘Start Attack’.
+It will launch the attack and the intruder window will appear.
+Now sort the ‘length’ tab by double-clicking on the length tab, and wait till the attack is completed.
+The greater length value that comes under the ‘Length’ column is the desired request.
+
+Step 12: Now once you find the right request, right click on the request and choose ‘show response in browser’ option to view the request in the browser. Copy the burp response URL and paste it in the burp configured browser.

@@ -1,0 +1,29 @@
+-> GET Based IDOR in URL Variant 1
+
+Post Based IDOR Variant 2 via Turbo Intruder
+
+Follow the steps below to perform the attack faster:
+
+1. Open burpsuite.
+
+2. Go to Extender > BAppStore
+
+3. Install Turbo Intruder
+
+4. Visit the URL: http://15.206.116.81/Insecure-Direct-Object-Reference/Post-Based-IDOR-Variant-2/salary-slip.php
+
+5. Send the POST request in Burpsuite to Turbo Intruder (right-click > send to turbo intruder)
+
+6. Download wordlist.txt (we can provide a link for this)
+
+7. Change the wordlist path from: /usr/share/dict/words to the location where wordlist.txt is stored.
+
+8. Replace 9D with %s in the Post Request and click attack.
+
+9. Click on words to sort the result via words, and you will find 3 Employee Ids [6Y,9D,3C]
+
+This approach can be used to perform other types of bruteforce attacks as well.
+
+Turbo Intruder Payloads: https://github.com/PortSwigger/turbo-intruder/tree/master/resources/
+
+examples - Create your own wordlist: https://linuxconfig.org/creating-wordlists-with-crunch-on-kali-linux
