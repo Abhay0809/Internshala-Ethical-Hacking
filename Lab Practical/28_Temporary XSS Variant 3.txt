@@ -1,0 +1,11 @@
+-> Temporary XSS Variant 3
+
+As our data is going inside the attribute of the input tag :
+
+<input value="HERE">
+
+What every you type will become the value of the Button and not execute.
+
+But, if you break using this tag : “> YOUR MALICIOUS CODE and inject your own code after:
+
+<input value=""> <script>alert("xssed")</script>">

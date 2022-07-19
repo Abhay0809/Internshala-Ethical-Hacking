@@ -1,0 +1,7 @@
+-> Temporary XSS Variant 2
+
+Xss isnt always in a text field, it can directly be in the URL
+
+Exploitation doesn’t need <script> tags, js can be executed with js events too like onclick, onload, onmouseover etc
+
+<img src="" onerror=alert(0)>

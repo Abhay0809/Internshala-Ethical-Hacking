@@ -1,0 +1,11 @@
+-> Temporary XSS Variant 4
+
+Tags are blocked but as out data is going inside an input tag: <iframe src="[HERE]">
+
+Just like sqli we can chose the already existing " and add our own html to the input tag
+
+If we enter the payload abcd" onload="alert('xssed') this is how it would appear
+
+<iframe src="abcd" onload="alert('xssed')">
+
+This makes the value abcd and the moment iframe loads, you will get the popup
