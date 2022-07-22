@@ -1,0 +1,7 @@
+-> Permanent XSS Variant 2
+
+We see browser names are printed. If we look at http request, it the same sting from the User Agent header in the HTTP request.
+
+Intercept request with Burp, replace user agent with abcd and the table wil show abcd on top.
+
+Now we can put any HTML in useragent and it will be stored XSSl User Agent: <script>alert("xssed")</script>

@@ -1,0 +1,13 @@
+-> Permanent XSS Variant 3
+
+Step 1: Go to the hacking challenge (The URL will be different for each user). http://13.232.74.70/Cross-Site-Scripting/Permanent-XSS-Variant-3/
+
+Step 2: Click on 'Login as A Seller' button.
+
+Step 3:Enter the payload "><img src='x' onerror=alert(1)> in 'Seller Address' input field
+
+Step 4: Click on save changes.
+
+Step 5: Now click on ‘Show Products’ button to view the XSS Pop up.
+
+Now anybody who browses the products will be affected by the payload hence ‘Seller Address’ field is vulnerable to permanent XSS. 

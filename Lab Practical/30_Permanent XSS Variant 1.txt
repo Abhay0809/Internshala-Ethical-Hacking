@@ -1,0 +1,5 @@
+-> Permanent XSS Variant 1
+
+All comments are stored in the database and printed back unsanitized. So, we can pass malicious HTML in the comments and then everyone who visits the post page will see out malicious HTML
+
+comment=<script>alert("xssed")</script>
